@@ -271,9 +271,9 @@ if __name__ == '__main__':
         iy_info("平安复旦：登陆失败", gl_info)
         sys_exit()
 
-#     if daily_fudan.check():
-#         iy_info("平安复旦：今日已提交", gl_info)
-#         sys_exit()
+    if daily_fudan.check():
+        iy_info("平安复旦：今日已提交", gl_info)
+        sys_exit()
 
     def captcha_info(message):
         iy_info(message, gl_info)
